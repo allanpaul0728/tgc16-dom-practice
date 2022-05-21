@@ -1,0 +1,10 @@
+document.querySelector('h1').style.color="green";
+document.querySelector('li.finished').innerText="Repay credit card debt";
+document.querySelector('li#urgent').style.border = "2px solid black";
+document.querySelector('.emphasis').style.textDecoration="underline";
+let pemp = document.querySelector('p.emphasis');
+pemp.style.backgroundColor='orange';
+pemp.style.fontSize='32px';
+pemp.style.lineHeight='24px';
+document.querySelector('li#urgent span.todo').style.backgroundColor='yellow';
+document.querySelector('h2').innerHTML = "<span class ='greetings'>About Us</span>";
