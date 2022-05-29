@@ -12,3 +12,10 @@
   display: flex;
   justify-content: space-around;
 }
+
+#insufficient {
+  background-color:lightsalmon;
+  border: 1px solid black;
+  border-radius: 10px;
+  display:none;
+}

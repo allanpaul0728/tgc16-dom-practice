@@ -1,18 +1,23 @@
 
-document.querySelector('#submit').click(function getFormValues() {
+// document.querySelector('#submit').click(function getFormValues() {
 
-    let email = document.querySelector('#email').value;
+function getFormValues() {
+    
 
-    let model = document.querySelectorAll('.phone-type');
+    let email = document.querySelector('#email-address').value;
 
-    let services = document.querySelectorAll('.services');
+    let model = document.querySelector('.phone-type:checked').value;
 
-    let pickup = document.querySelector('#pick-up');
+    let services = document.querySelectorAll('.services:checked').forEach(function(Element) {
+        services.push(element.value)
+    })
+
+    let pickup = document.querySelector('#pick-up').value;
 
     // leave this line alone!
     return [email, model, services, pickup];
 
-})
+}
 
 // LEAVE THE BELOW ALONE! DON'T TOUCH
 try {
